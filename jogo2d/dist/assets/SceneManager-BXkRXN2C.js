@@ -1,0 +1,1 @@
+var e={loadScene(e){window.location.href=`${e}.html`}};export{e as t};

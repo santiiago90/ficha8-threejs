@@ -1,0 +1,1 @@
+import{t as e}from"./SceneManager-BXkRXN2C.js";var t=class{levelToLoad=`nivel1`;newGame(){localStorage.setItem(`score`,0),e.loadScene(this.levelToLoad)}quitGame(){window.close(),document.body.innerHTML=`<h1>Obrigado por jogar!</h1>`}};export{t};

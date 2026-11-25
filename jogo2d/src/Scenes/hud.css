@@ -1,0 +1,65 @@
+/* 1rem = 16px num ecrã de referência de 1920x1080. */
+html { font-size: min(100vw / 120, 100vh / 67.5); }
+#hud {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+#scoreTitle { 
+    position: absolute; 
+    left: 2rem; 
+    top: 1.5rem; 
+    width: 10rem; 
+    height: 3rem; 
+  }
+  
+#scoreValue { 
+  position: absolute;
+  left: 9rem;
+  top: 1.5rem;
+  width: 10rem;
+  height: 3rem; 
+}
+
+/* Container das vidas */
+#lives {
+  position: absolute;
+  top: 7rem;
+  left: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+/* Imagens das vidas */
+.life {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+#pauseMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: rgba(19, 31, 52, 0.95);
+  text-align: center;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+#pauseMenu h1 {
+  margin: 0 0 1rem;
+}
+
+#pauseMenu button {
+  pointer-events: auto;
+  cursor: pointer;
+  font: inherit;
+  padding: 0.5em 0.8em;
+}

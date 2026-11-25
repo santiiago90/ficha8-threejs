@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nível 1</title>
+    <style>
+      body { margin: 0; overflow: hidden; }
+      canvas { display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="hud">
+      <span id="scoreTitle">Score:</span>
+      <span id="scoreValue">0000</span>
+
+      <div id="lives">
+        <img class="life" src="/assets/Sprites/Objects/heart.png" alt="Vida 1">
+        <img class="life" src="/assets/Sprites/Objects/heart.png" alt="Vida 2">
+        <img class="life" src="/assets/Sprites/Objects/heart.png" alt="Vida 3">
+      </div>
+      <div id="pauseMenu" hidden>
+        <h1>Pausa</h1>
+        <button id="btnResume" type="button">Continuar</button>
+        <button id="btnMenu" type="button">Sair</button>
+      </div>
+    </div>
+    <script type="module" src="/src/Scenes/nivel1.js"></script>
+  </body>
+</html>
